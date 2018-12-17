@@ -10,6 +10,16 @@ docker run --tty \
 	   laravel new
 ```
 
+## Create a special Laravel version
+
+```
+docker run --tty \
+       --rm \
+       --volume $PWD/laravel:/var/www/html \
+       shawnoy/laravel \
+       composer create-project laravel/laravel ./ 5.2.*
+```
+
 ## Host a Laravel project
 
 ```
