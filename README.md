@@ -6,7 +6,7 @@
 docker run --tty \
            --rm \
 	   --volume $PWD/laravel:/var/www/html \
-	   laravel \
+	   shawnoy/laravel \
 	   laravel new
 ```
 
@@ -17,5 +17,5 @@ docker run --interactive \
            --tty \
 	   --volume $PWD/laravel:/var/www/html \
 	   --publish 8080:8080 \
-	   laravel
+	   shawnoy/laravel
 ```
